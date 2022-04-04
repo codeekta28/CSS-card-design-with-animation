@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice cards</title>
+    <style>
+body{
+    background-color: #ddd;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    bo
+}
+.singleProduct{
+    border: 4px solid green;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin:10px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+.singleProduct img{
+    width: 100%;
+    height: 47vh;
+    transition: all .3s linear;
+}
+.productArea{
+    /* border:4px solid red; */
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    width: 100%;
+    bottom: 50px;
+    right:100%;
+    transition: all .3s linear;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.productText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.singleProduct:hover .productArea{
+    right: 0px;
+}
+.singleProduct:hover img{
+    transform: scale(1.3);
+}
+.container{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 20px;
+    color: rgb(151, 11, 11);
+    margin-top: 8%;
+    letter-spacing: 2px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Happy Christmas</h1>
+    <div class="wrapper">
+        
+        <div class="singleProduct">
+            <img src="img1.jpg" alt="">
+            <div class="productArea">
+                <a href="#"><p class="productText">Cold Coffee</p></a>
+            </div>
+        </div>
+        <div class="singleProduct">
+            <img src="img2.jpg" alt="">
+            <div class="productArea">
+                <a href="#"><p class="productText">Snow Playing</p></a>
+            </div>
+        </div>
+        <div class="singleProduct">
+            <img src="img3.jpg" alt="">
+            <div class="productArea">
+                <a href="#"><p class="productText">Snow Vacation</p></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    
+</body>
+</html>
